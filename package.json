@@ -8,7 +8,8 @@
     "start": "tsc & node ./dist/index.js",
     "dev": "nodemon",
     "lint": "eslint . --ext .ts --fix",
-    "precommit": "npm run dev"
+    "precommit": "lint-staged",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "**/*.ts": [
